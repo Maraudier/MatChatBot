@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="/" method="post">
+
+<p>Lets see if you speak good: <input type="text" name="input" id="userinput" value={{fill_text}}></p>
+
+<p><input type="submit" value="Evaluate"></p>
+</form> 
+<p>
+    {{prediction}}
+</p>
+{% endblock %}
